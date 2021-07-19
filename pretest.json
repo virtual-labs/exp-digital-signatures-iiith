@@ -1,0 +1,38 @@
+[
+{"question":"1. Digital signature can’t provide ______ for the message",
+"answers":{
+            "a":"Integrity",
+            "b":"Congidentiality",
+            "c":"NOn repudiation",
+            "d":"Authentication"
+          },
+"correctAnswer":"a"},
+
+{"question":"2. Digital signature uses ______ for generating valid signature",
+"answers":{
+            "a":"Private key",
+            "b":"Public key",
+            "c":"Secret key",
+            "d":"None of the above"
+          },
+"correctAnswer":"c"}, 
+
+{"question":"3. Verification Algorithm uses ______ for validating digital signature ",
+"answers":{
+            "a":"Private key",
+            "b":"Public key",
+            "c":"Secret key",
+            "d":"None of the above"
+          },
+"correctAnswer":"a"},
+
+{"question":"4. Is digital signature scheme possible without public key cryptography ",
+"answers":{
+            "a":"Yes",
+            "b":"No",
+            "c":"May be exist",
+            "d":"None of the above"
+          },
+"correctAnswer":"c"} 
+
+]
