@@ -1,4 +1,4 @@
-1. Digital signature can¡¯t provide ______ for the message
+1. Digital signature can't provide ______ for the message
   (a) Integrity  
   (b) Congidentiality  
   (c) NOn repudiation  
