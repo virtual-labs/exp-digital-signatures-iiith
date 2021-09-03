@@ -1,4 +1,3 @@
-- [Wikipedia on Digital Sinatures](https://en.wikipedia.org/wiki/Digital_signature)
-- [Notes on Digital Signature I](https://people.eecs.berkeley.edu/~luca/cs276/lecture20.pdf)
+- [Wikipedia on Digital Sinatures](https://en.wikipedia.org/wiki/Digital_signature)  
 - Introduction to Modern Cryptography by Jonathan Katz and Yehuda Lindell.
 
