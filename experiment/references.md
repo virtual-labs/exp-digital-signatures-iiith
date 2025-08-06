@@ -1,3 +1,4 @@
-- [Wikipedia on Digital Sinatures](https://en.wikipedia.org/wiki/Digital_signature)  
-- Introduction to Modern Cryptography by Jonathan Katz and Yehuda Lindell.
-
+- [Wikipedia on Digital Signatures](https://en.wikipedia.org/wiki/Digital_signature)
+- [NIST Digital Signature Standard (DSS)](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-4.pdf)
+- [RFC 3447 - Public-Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications](https://tools.ietf.org/html/rfc3447)
+- [RSA Laboratories - PKCS #1 v2.2](https://www.rsa.com/en-us/research-and-publications/rsa-labs)
