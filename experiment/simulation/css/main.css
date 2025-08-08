@@ -1,63 +1,271 @@
-/* Digital Signatures Simulation Styling */
+/* Digital Signatures Simulation Styling - MAC Style */
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, Arial, sans-serif;
   margin: 20px;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #f8f9fa;
 }
 
 .content {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1,
 h2,
 h3 {
   color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+h4 {
+  color: #495057;
+  margin-bottom: 10px;
 }
 
 p {
   margin-bottom: 15px;
 }
 
+/* Table styling for better form organization */
+table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  width: 100%;
+}
+
+td {
+  padding: 8px;
+  vertical-align: top;
+}
+
+td:first-child {
+  font-weight: bold;
+  min-width: 150px;
+}
+
+/* Input and textarea styling */
 input[type="text"],
 textarea {
   border: 1px solid #ddd;
   padding: 8px;
   border-radius: 4px;
   font-family: monospace;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 input[type="text"]:focus,
 textarea:focus {
-  border-color: #4caf50;
+  border-color: #007bff;
   outline: none;
-  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
+/* Button styling - MAC theme */
 input[type="button"] {
-  background-color: #4caf50;
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin: 5px;
-  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin: 2px;
 }
 
-input[type="button"]:hover {
-  background-color: #45a049;
+/* Generate buttons - Green */
+.generate-button {
+  background: #28a745;
 }
 
-input[type="button"]:active {
-  transform: translateY(1px);
+.generate-button:hover {
+  background: #218838;
+}
+
+/* Calculate/Process buttons - Blue */
+.calculate-button {
+  background: #007bff;
+}
+
+.calculate-button:hover {
+  background: #0056b3;
+}
+
+/* Action buttons - Orange */
+.action-button {
+  background: #fd7e14;
+}
+
+.action-button:hover {
+  background: #e55a00;
+}
+
+/* Default button style */
+input[type="button"]:not([class]) {
+  background-color: #007bff;
+}
+
+input[type="button"]:not([class]):hover {
+  background-color: #0056b3;
+}
+
+/* Section styling */
+.step-section {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #007bff;
+}
+
+/* Step 1 - Light Blue */
+.step1-section {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #2196f3;
+}
+
+/* Step 2 - Light Orange */
+.step2-section {
+  background: #fff3e0;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #ff9800;
+}
+
+/* Step 3 - Light Green (Results) */
+.result-section {
+  background: #e8f5e8;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #28a745;
+}
+
+/* Step 4 - Light Purple */
+.step4-section {
+  background: #f3e5f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #9c27b0;
+}
+
+/* Status and result styling */
+.status-success {
+  background: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+}
+
+.status-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #f5c6cb;
+}
+
+/* Key button container styling */
+.key-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  .content {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  td:first-child {
+    min-width: 120px;
+    font-size: 13px;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 14px;
+  }
+
+  input[type="button"] {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 2px;
+  }
+
+  .key-buttons-container {
+    flex-direction: column;
+  }
+
+  .key-buttons-container input[type="button"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .step1-section,
+  .step2-section,
+  .step4-section,
+  .result-section {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    padding: 5px;
+  }
+
+  td:first-child {
+    font-weight: bold;
+    background: #f8f9fa;
+    min-width: auto;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
 
 textarea {

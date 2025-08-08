@@ -6,4 +6,4 @@ In Public key setting,it becomes difficult to verify for a receiver whether mess
 
 In this experiment, we show how can a receiver verify integrity of the message in public key setting.
 
-Your task is to verify, whether digital signature scheme really works and why it works?
+Your task is to verify the effectiveness of the digital signature scheme and explain the underlying principles that make it work.
