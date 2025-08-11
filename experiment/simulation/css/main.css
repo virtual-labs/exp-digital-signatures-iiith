@@ -1,1 +1,485 @@
-/* You CSS goes in here */
+/* Digital Signatures Simulation Styling - MAC Style */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+h4 {
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Table styling for better form organization */
+table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  width: 100%;
+}
+
+td {
+  padding: 8px;
+  vertical-align: top;
+}
+
+td:first-child {
+  font-weight: bold;
+  min-width: 150px;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+textarea {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button styling - MAC theme */
+input[type="button"] {
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin: 2px;
+}
+
+/* Generate buttons - Green */
+.generate-button {
+  background: #28a745;
+}
+
+.generate-button:hover {
+  background: #218838;
+}
+
+/* Calculate/Process buttons - Blue */
+.calculate-button {
+  background: #007bff;
+}
+
+.calculate-button:hover {
+  background: #0056b3;
+}
+
+/* Action buttons - Orange */
+.action-button {
+  background: #fd7e14;
+}
+
+.action-button:hover {
+  background: #e55a00;
+}
+
+/* Default button style */
+input[type="button"]:not([class]) {
+  background-color: #007bff;
+}
+
+input[type="button"]:not([class]):hover {
+  background-color: #0056b3;
+}
+
+/* Section styling */
+.step-section {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #007bff;
+}
+
+/* Step 1 - Light Blue */
+.step1-section {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #2196f3;
+}
+
+/* Step 2 - Light Orange */
+.step2-section {
+  background: #fff3e0;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #ff9800;
+}
+
+/* Step 3 - Light Green (Results) */
+.result-section {
+  background: #e8f5e8;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #28a745;
+}
+
+/* Step 4 - Light Purple */
+.step4-section {
+  background: #f3e5f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #9c27b0;
+}
+
+/* Status and result styling */
+.status-success {
+  background: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+}
+
+.status-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #f5c6cb;
+}
+
+/* Key button container styling */
+.key-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  .content {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  td:first-child {
+    min-width: 120px;
+    font-size: 13px;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 14px;
+  }
+
+  input[type="button"] {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 2px;
+  }
+
+  .key-buttons-container {
+    flex-direction: column;
+  }
+
+  .key-buttons-container input[type="button"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .step1-section,
+  .step2-section,
+  .step4-section,
+  .result-section {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    padding: 5px;
+  }
+
+  td:first-child {
+    font-weight: bold;
+    background: #f8f9fa;
+    min-width: auto;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+input[readonly],
+textarea[readonly] {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+strong {
+  color: #2c3e50;
+}
+
+em {
+  color: #e74c3c;
+  font-style: normal;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #eee;
+  margin: 30px 0;
+}
+
+.step-section {
+  margin: 25px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #4caf50;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Alert warning styling */
+.alert-warning {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 18px auto 18px auto;
+  color: #b26a00;
+  background: #fffbe6;
+  border: 1px solid #ffe58f;
+  border-radius: 8px;
+  padding: 12px 18px;
+  max-width: 600px;
+}
+
+/* Responsive design - Mobile First with JavaScript override support */
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 10px !important;
+    padding: 15px !important;
+  }
+
+  /* Base mobile styling - JavaScript will override inline attributes */
+  body {
+    font-size: 18px !important;
+    margin: 5px !important;
+  }
+
+  /* Better spacing for mobile */
+  p {
+    margin-bottom: 25px !important;
+  }
+
+  /* Adjust form spacing */
+  form p {
+    margin-bottom: 20px !important;
+  }
+
+  /* Ensure proper spacing */
+  strong {
+    font-size: 20px !important;
+    display: block !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Better line spacing */
+  br {
+    line-height: 1.5 !important;
+  }
+
+  /* Horizontal rule styling */
+  hr {
+    margin: 30px 0 !important;
+    border: 1px solid #ddd !important;
+  }
+
+  /* Mobile-only styling to override inline attributes */
+  input[type="text"],
+  textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 120px !important;
+    height: auto !important;
+    font-size: 24px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+    padding: 15px !important;
+    border: 2px solid #ddd !important;
+    border-radius: 6px !important;
+    margin: 10px 0 !important;
+    display: block !important;
+    box-sizing: border-box !important;
+    resize: vertical !important;
+  }
+
+  /* Ensure ALL textareas are consistent but keep proper height */
+  textarea[cols],
+  textarea[rows],
+  textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 120px !important;
+    height: auto !important;
+    resize: vertical !important;
+    font-size: 24px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+    padding: 15px !important;
+    border: 2px solid #ddd !important;
+    border-radius: 6px !important;
+    margin: 10px 0 !important;
+    display: block !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ensure ALL input text fields match textareas - 120px min-height */
+  input[type="text"][size],
+  input[type="text"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 120px !important;
+    height: auto !important;
+    font-size: 24px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+    padding: 15px !important;
+    border: 2px solid #ddd !important;
+    border-radius: 6px !important;
+    margin: 10px 0 !important;
+    display: block !important;
+    box-sizing: border-box !important;
+    resize: vertical !important;
+  }
+
+  /* Better button proportions - taller but not full width */
+  input[type="button"] {
+    width: 80% !important;
+    max-width: 300px !important;
+    min-height: 60px !important;
+    height: 60px !important;
+    font-size: 20px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 600 !important;
+    padding: 18px 15px !important;
+    border-radius: 8px !important;
+    display: block !important;
+    box-sizing: border-box !important;
+    background-color: #007cba !important;
+    color: white !important;
+    border: none !important;
+    cursor: pointer !important;
+    margin: 15px auto !important;
+  }
+}
+
+/* Extra small screens (phones in portrait) - consistent with main mobile styles */
+@media screen and (max-width: 480px) {
+  body {
+    margin: 5px !important;
+    font-size: 18px !important;
+  }
+
+  .content {
+    margin: 0 !important;
+    padding: 10px !important;
+  }
+
+  /* Better spacing for very small screens */
+  hr {
+    margin: 25px 0 !important;
+  }
+
+  strong {
+    font-size: 20px !important;
+  }
+
+  /* Ensure proper spacing between sections */
+  p {
+    margin-bottom: 20px !important;
+  }
+
+  /* Ensure input fields and textareas maintain large font on very small screens */
+  input[type="text"],
+  textarea {
+    font-size: 24px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+  }
+
+  /* Make sure buttons are appropriately sized for very small screens */
+  input[type="button"] {
+    width: 90% !important;
+    max-width: 280px !important;
+    min-height: 65px !important;
+    height: 65px !important;
+    font-size: 20px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 600 !important;
+    margin: 15px auto !important;
+  }
+}
